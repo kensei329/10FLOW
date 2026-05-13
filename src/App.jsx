@@ -33,6 +33,7 @@ function App() {
             <a href="#product" className="nav-link">製品情報</a>
             <a href="#pricing" className="nav-link">料金</a>
             <a href="#notice" className="nav-link">電子公告</a>
+            <a href="#security-policy" className="nav-link">情報セキュリティ基本方針</a>
             <a href="#company" className="nav-link">会社情報</a>
           </nav>
         </div>
@@ -336,6 +337,72 @@ function App() {
           </div>
         </section>
 
+        {/* ─── 情報セキュリティ基本方針 ─── */}
+        <section
+          id="security-policy"
+          className="section"
+          style={{ backgroundColor: 'var(--color-surface)', borderTop: '1px solid var(--color-border)' }}
+        >
+          <div className="container">
+            <div className="card company-card fade-in" style={{ maxWidth: '900px', margin: '0 auto' }}>
+              <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                <span className="section-tag">SECURITY ACTION 自己宣言</span>
+                <h2 style={{ fontSize: '1.75rem', marginTop: '0.75rem' }}>情報セキュリティ基本方針</h2>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem', fontSize: '0.95rem', marginBottom: '1.5rem', paddingBottom: '1rem', borderBottom: '1px solid var(--color-border)' }}>
+                <span>制定日: 2026年5月13日</span>
+                <span>10FLOW株式会社</span>
+                <span>代表取締役 白石 憲正</span>
+              </div>
+
+              <p style={{ marginBottom: '1.5rem', lineHeight: 1.8 }}>
+                10FLOW株式会社（以下「当社」という。）は、歯科医院をはじめとする医療機関向けの自由診療業務管理SaaS「10FLOW」の提供を通じて、医療機関の業務効率化と医療サービス品質の向上に貢献することを使命としている。当社が取り扱う情報には、医療機関の業務情報、患者の個人情報、自由診療に関わる契約情報等が含まれており、これらの情報資産を適切に保護することは、当社の事業活動の根幹をなす責務である。
+              </p>
+              <p style={{ marginBottom: '2rem', lineHeight: 1.8 }}>
+                当社は、情報セキュリティを経営上の重要課題と位置づけ、保有・取扱う全ての情報資産を、不正アクセス・改ざん・漏えい・滅失・破壊等の脅威から保護するため、本「情報セキュリティ基本方針」を定め、全社で取り組む。
+              </p>
+
+              <h3 style={{ fontSize: '1.15rem', marginTop: '1.5rem', marginBottom: '0.75rem', borderLeft: '4px solid var(--color-accent)', paddingLeft: '0.75rem' }}>1. 経営者の責任</h3>
+              <p style={{ lineHeight: 1.8 }}>
+                当社は、経営者主導で、組織的かつ継続的に情報セキュリティの向上に取り組む。経営者は情報セキュリティに関する最終責任を負い、対策の実行に必要な経営資源を割り当てる。
+              </p>
+
+              <h3 style={{ fontSize: '1.15rem', marginTop: '1.5rem', marginBottom: '0.75rem', borderLeft: '4px solid var(--color-accent)', paddingLeft: '0.75rem' }}>2. 社内体制の整備</h3>
+              <p style={{ lineHeight: 1.8 }}>
+                当社は、情報セキュリティ対策を推進するための責任者を定め、情報セキュリティ対策を組織的に推進する体制を整備する。また、情報資産を適切に分類・管理するとともに、サービス基盤の通信暗号化（SSL/TLS）、アクセス制御、認証強化、ログ監視、定期的な脆弱性対策、バックアップ等の技術的対策を講じる。
+              </p>
+
+              <h3 style={{ fontSize: '1.15rem', marginTop: '1.5rem', marginBottom: '0.75rem', borderLeft: '4px solid var(--color-accent)', paddingLeft: '0.75rem' }}>3. 従業員の取り組み</h3>
+              <p style={{ lineHeight: 1.8 }}>
+                当社の役員および従業員は、情報セキュリティに関する規程および手順を遵守し、本方針の実現に努める。当社は従業員に対して情報セキュリティに関する教育・訓練を定期的に実施し、各人のセキュリティ意識と対応能力の向上を図る。
+              </p>
+
+              <h3 style={{ fontSize: '1.15rem', marginTop: '1.5rem', marginBottom: '0.75rem', borderLeft: '4px solid var(--color-accent)', paddingLeft: '0.75rem' }}>4. 法令及び契約上の要求事項の遵守</h3>
+              <p style={{ lineHeight: 1.8 }}>
+                当社は、個人情報保護法、不正アクセス禁止法をはじめとする情報セキュリティに関わる関連法令、業界ガイドライン、顧客との契約上のセキュリティ要件を遵守する。とりわけ医療機関から預かる情報については、最高水準の取扱いを行う。また、業務委託先に対しても当社と同等以上のセキュリティ水準を求め、契約上で明示する。
+              </p>
+
+              <h3 style={{ fontSize: '1.15rem', marginTop: '1.5rem', marginBottom: '0.75rem', borderLeft: '4px solid var(--color-accent)', paddingLeft: '0.75rem' }}>5. 違反及び事故への対応</h3>
+              <p style={{ lineHeight: 1.8 }}>
+                本方針および関連規程の違反、または情報セキュリティ事故・インシデントが発生した場合は、被害の拡大防止、原因究明、再発防止を速やかに実施する。違反行為については、就業規則等に基づき適切な処分を行うとともに、必要に応じて関係機関への通報および法的措置を含めて対応する。当社はPDCAサイクルに基づき、本方針および関連規程を定期的に見直し、継続的な改善を行う。
+              </p>
+
+              <div style={{ marginTop: '2.5rem', paddingTop: '1.25rem', borderTop: '1px solid var(--color-border)' }}>
+                <h4 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>改定履歴</h4>
+                <dl className="company-dl" style={{ marginTop: 0 }}>
+                  <dt>第1.0版</dt>
+                  <dd>2026年5月13日 制定</dd>
+                </dl>
+              </div>
+
+              <p style={{ textAlign: 'right', marginTop: '2rem', fontSize: '0.95rem' }}>
+                以上
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ─── Company Info ─── */}
         <section id="company" className="section" style={{ backgroundColor: 'var(--color-surface)', borderTop: '1px solid var(--color-border)' }}>
           <div className="container">
@@ -375,6 +442,8 @@ function App() {
             <a href="mailto:info@10flow.ai">info@10flow.ai</a>
             <span className="footer-sep">|</span>
             <a href="#notice">電子公告</a>
+            <span className="footer-sep">|</span>
+            <a href="#security-policy">情報セキュリティ基本方針</a>
             <span className="footer-sep">|</span>
             <a href="#company">会社情報</a>
           </div>
